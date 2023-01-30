@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Itim&family=Lexend&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build.css">
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgb(233,130,15);
+            background: linear-gradient(180deg, rgba(233,130,15,0.8477984943977591) 0%, rgba(0,136,255,0.45284051120448177) 30%, rgba(0,136,255,1) 62%, rgba(109,10,244,0.45284051120448177) 87%);
+        }
+    </style>
+    <title>High Low</title>
+</head>
+<body class="w-screen h-screen">
+    <div class="text-center w-80 h-80 content-center items-center relative bg-slate-300 rounded-lg drop-shadow-xl">
+        <div class="absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 p-10">
+            <h1 class="text-2xl mb-5 font-itim text-purple-500">High Low</h1>
+            <h3 id="result" class="font-itim text-lg mb-4 text-purple-500">Enter your first guess!</h3>
+            <h5 class="font-itim text-md mb-4 text-purple-500">Tries: <span id="tries"></span></h5>
+            <input type="text" id="guess" class="border-solid border-2 border-blue-500 rounded-md hover:border-purple-500 mb-5 text-center font-itim text-purple-500">
+            <button id="submit" onclick="guess()" class="font-itim text-purple-500 px-4 py-3 rounded-lg bg-indigo-100">Submit</button>
+            <script src="./script.js"></script>
+        </div>
+    </div>
+</body>
+</html>
